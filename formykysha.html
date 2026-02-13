@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>formykysha!</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Times New Roman, Times New Roman;
+        background-color: #f4f4f4;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 30px;
+        font-size: 42px;
+    }
+
+    .music-player {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /* BIGGER IMAGES */
+    .gallery img {
+        width: 250px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    /* BIGGER TEXT */
+    .content {
+        max-width: 700px;
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        text-align: justify;
+        font-size: 22px;
+        line-height: 1.8;
+    }
+
+    .content h2 {
+        font-size: 32px;
+    }
+
+    @media (max-width: 1000px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .gallery {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .gallery img {
+            width: 80%;
+            height: auto;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Happy Valentines Day!!</h1>
+
+<div class="music-player">
+    <audio controls>
+        <source src="toesong.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div class="music-player">
+    <audio controls>
+        <source src="" type="audio/mpeg">
+    </audio>
+</div>
+
+<div class="container">
+
+    <!-- Left Gallery -->
+    <div class="gallery">
+        <img src="1.jpg">
+        <img src="3.jpg">
+        <img src="5.jpg">
+        <img src="7.jpg">
+        <img src="9.jpg">
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>To my Dearest, Kysha</h2>
+        <p>
+            This is a larger body of text placed between two tall vertical galleries.
+            The font size is increased to make it more readable and visually impactful.
+        </p>
+        <p>
+            Because the images are now much taller, you will need to scroll down
+            to see the entire gallery. This creates a more immersive layout that
+            feels like a modern storytelling webpage.
+        <p>
+            You can replace the text, images, and music file with your own
+            content to personalize the page.
+        </p>
+    </div>
+
+    <!-- Right Gallery -->
+    <div class="gallery">
+        <img src="2.jpg">
+        <img src="4.jpg">
+        <img src="6.jpg">
+        <img src="8.jpg">
+        <img src="10.jpg">
+    </div>
+
+</div>
+
+</body>
+</html>
